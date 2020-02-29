@@ -4,11 +4,13 @@
     <title>Sara R Mills - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|PT+Sans+Narrow|Roboto+Condensed&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <nav role="navigation">
+    <nav>
       <a href="#about">About</a> 
       <a href="#projects">Projects</a> 
       <a href="#skills">Skills</a>
@@ -16,20 +18,21 @@
       <a href="#contact">Contact</a> 
     </nav>
     
-    <main role="main">
+    <main>
       
       
       <article class="about">
          <a id="about"></a>
-        <header role="banner">
-          <img class="profpic" src="Project-Images/tinydogbutt.jpeg">
+        <header>
+          <img class="profpic" src="Project-Images/tinydogbutt.jpeg" alt="black and white dog lying on bed with green plant in background">
             <h1>Sara R Mills</h1>
           <p>My closest friend has been working as a web developer for years, and when I was looking for a career change, he suggested I consider joining him as a developer. I took him up on that, and haven’t looked back.</p>
         </header>
         
        
-          <h2>About Me</h2>
+         
           <section class="bio-container">
+            <h2>About Me</h2>
             <div class="bio_pt1">
             I have a background in science, but I have an even stronger background solving puzzles. I love solving problems and fixing things. 
             </div>
@@ -48,7 +51,7 @@
             <p class="hovertext" id="int1txt">Oil painting by me!</p>
 
            
-            <img src="Project-Images/tinypainting1.png"class="interest" id="interest2" alt="color-field oil painting by me">
+            <img src="Project-Images/tinypainting1.png" class="interest" id="interest2" alt="color-field oil painting by me">
             <p class="hovertext" id="int2txt">Oil painting by me!</p>
 
             <img src="Project-Images/tinychair.jpeg" class="interest" id="interest3" alt="large wooden chair shaped like a birdhouse with string lights inside">
@@ -56,7 +59,7 @@
 
             <img src="Project-Images/tinyff7.png" class="interest" id="interest4" alt="Screenshot of Final Fantasy 7 gameplay"><p class="hovertext" id="int4txt">Screenshot of my fav video game of all time - Final Fantasy 7!</p>
 
-            <img src="Project-Images/tinysdv.png" class="interest" id="interest5"alt="Screenshot of Stardew Valley gameplay"><p class="hovertext" id="int5txt" >Screenshot of my newest Stardew Valley Farm (loving the multiplayer update)!</p>
+            <img src="Project-Images/tinysdv.png" class="interest" id="interest5" alt="Screenshot of Stardew Valley gameplay"><p class="hovertext" id="int5txt" >Screenshot of my newest Stardew Valley Farm (loving the multiplayer update)!</p>
 
             <img src="Project-Images/tinydont.jpeg" class="interest" id="interest6" alt="Screenshot of Don't Starve Together gameplay"><p class="hovertext" id="int6txt">Screenshot of Don't Starve Together couch co-op mode!</p>
 
@@ -122,11 +125,11 @@
         <article class="skills">
           <a id="skills"></a>
             <h2>Skills</h2>
-            <section class="skill-content">
+            <div class="skill-content">
               <img class="skillimg" src="Project-Images/tinyhtml5.png" alt="HTML5 icon">
               <img class="skillimg" src="Project-Images/tinycss3.jpeg" alt="CSS3 icon">
               <img class="skillimg" src="Project-Images/tinyjavascript.png" alt="Javascript icon">
-            </section>
+            </div>
         </article>
 
         
@@ -156,8 +159,8 @@
               </ul>
             </div>
           </section>
-          <section class="awards">
-          </section>
+          <!-- <section class="awards"><h4></h4>
+          </section> -->
 
         </article>
 
@@ -165,12 +168,12 @@
         <article class="contact">
           <a id="contact"></a>
             <h2>Contact</h2>
-            <a href="https://github.com/Saraquail/"><img src="Project-Images/tinygithub3.png" class="contact-linkgh"></a>
-            <a href="mailto: saramoneymills@gmail.com"><img src="Project-Images/tinygmail.png" class="contact-link"></a>
-            <a href="https://www.linkedin.com/in/sararmills/"><img src="Project-Images/tinylinked.png" class="contact-link"></a>
+            <a href="https://github.com/Saraquail/"><img src="Project-Images/tinygithub3.png" class="contact-linkgh" alt="github logo"></a>
+            <a href="mailto:saramoneymills@gmail.com"><img src="Project-Images/tinygmail.png" class="contact-link" alt="gmail logo"></a>
+            <a href="https://www.linkedin.com/in/sararmills/"><img src="Project-Images/tinylinked.png" class="contact-link" alt="linkedin logo"></a>
         </article>
     </main>
-    <footer role="content-info">
+    <footer>
       <span class="left-foot-text">Sara R Mills</span>
       <span class="right-foot-text">saramoneymills@gmail.com</span>
     </footer>

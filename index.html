@@ -1,182 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Sara R Mills - Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+  <title>Sara R Mills - Portfolio</title>
+  <meta charset="UTF-8>" <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|PT+Sans+Narrow|Roboto+Condensed&display=swap"
+    rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|PT+Sans+Narrow|Roboto+Condensed&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-    <nav>
-      <a href="#about">About</a> 
-      <a href="#projects">Projects</a> 
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a> 
+  <header>
+    <div class="logo">
+      <!-- <img class="header-img" src="Project-Images/greenhouse.jpg" alt="something" /> -->
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list" class="nav__link">
+        <li class="nav__item" class="nav__link">
+          <a href="#home" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="#work" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#footer" class="nav__link">Contact</a>
+        </li>
+      </ul>
     </nav>
-    
-    <main>
-      
-      <header>
-          <img class="profpic" src="Project-Images/tinydogbutt.jpeg" alt="black and white dog lying on bed with green plant in background">
-            <h1>Sara R Mills</h1>
-          <p class="required-header-text">My closest friend has been working as a web developer for years, and when I was looking for a career change, he suggested I consider joining him as a developer. I took him up on that, and haven’t looked back.</p>
-        </header>
+  </header>
 
-      <article class="about">
-         <a id="about"></a>
-        
-        
-       <section class="bio">
-        <h2>About Me</h2>
-          <div class="bio-container">
-            
-            <div class="bio_pt1">
-            I have a background in science, but I have an even stronger background solving puzzles. I love solving problems and fixing things. 
-            </div>
+  <section class="intro" id="home">
+    <h1>Hi, I am <strong>Sara R Mills</strong></h1>
 
-            <div class="bio_pt2">
-            To me programming feels like playing a game - every time I do something new I gain experience points and eventually level up. The best part is: there’s no game overs. I can always eventually find the next step to figuring out how to solve the problem, no matter how large the problem may be (i.e. boss fight!). 
-            </div>
+    <p class="section__subtitle section__subtitle--intro">Web Developer</p><img src="Project-Images/tinylayingdog.jpeg"
+      alt="dog lying with plant behind it" class="intro__img">
+  </section>
 
-            <div class="bio_pt3">
-            I look forward to being a part of a team, so we can play(oops, I mean work) multiplayer co-op mode!
-            </div>
-</div>
-          </section>
-          <aside class="interests">
-            <img src="Project-Images/tinypainting.png" id="interest1" class="interest" alt="color-field oil painting by me">
-            <p class="hovertext" id="int1txt">Oil painting by me!</p>
+  <section class="my-skills" id="skills">
+    <h2 class="section__title section__title--skills">What I can do</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Front-end
+        </h3>
+        <p> React.js, HTML, CSS, jQuery</p>
 
-           
-            <img src="Project-Images/tinypainting1.png" class="interest" id="interest2" alt="color-field oil painting by me">
-            <p class="hovertext" id="int2txt">Oil painting by me!</p>
+      </div>
+      <!--skill -->
+      <div class="skill">
+        <h3>Back-end
+        </h3>
+        <p>Node.js, Express.js, PSQL, Knex</p>
 
-            <img src="Project-Images/tinychair.jpeg" class="interest" id="interest3" alt="large wooden chair shaped like a birdhouse with string lights inside">
-            <p class="hovertext" id="int3txt">Chair I designed and built myself!</p>
+      </div>
+      <!--skill -->
+      <div class="skill">
+        <h3>Other Tech
+        </h3>
+        <p>JavaScript, VSCode</p>
 
-            <img src="Project-Images/tinyff7.png" class="interest" id="interest4" alt="Screenshot of Final Fantasy 7 gameplay"><p class="hovertext" id="int4txt">Screenshot of my fav video game of all time - Final Fantasy 7!</p>
-
-            <img src="Project-Images/tinysdv.png" class="interest" id="interest5" alt="Screenshot of Stardew Valley gameplay"><p class="hovertext" id="int5txt" >Screenshot of my newest Stardew Valley Farm (loving the multiplayer update)!</p>
-
-            <img src="Project-Images/tinydont.jpeg" class="interest" id="interest6" alt="Screenshot of Don't Starve Together gameplay"><p class="hovertext" id="int6txt">Screenshot of Don't Starve Together couch co-op mode!</p>
-
-            <img src="Project-Images/tinygarden.png" class="interest" id="interest7" alt="small raised garden beds with various vegetable plants"><p class="hovertext" id="int7txt">Last year's garden!</p>
-
-            <img src="Project-Images/tinybass.png" class="interest" id="interest8" alt="a dark brown 4-string bass guitar with wood finish"><p class="hovertext" id="int8txt">My bass! I'm not very good, but it's fun to play with friends.</p>
-
-            <img src="Project-Images/tinyhouseplants.png" class="interest" id="interest9" alt="various potted houseplants"><p class="hovertext" id="int9txt">Very small selection of my houseplants!</p>
-          
-          </aside>
-          <aside id="interests-caption">I also like these things!</aside>
-          
-        </article>
+      </div>
+      <!--skill -->
+    </div>
+    <!--skills -->
+    <a href="#work" class="btn">My Work</a>
+  </section>
 
 
-        
-        <article class="projects">
-          <a id="projects"></a>
-            <h2>Projects</h2>
-            <section class="project-grid">
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">
+      Full-range Web Engineer</p>
 
-            <div class="project-container">
-            
-              <div class="project-title">
-              <h3>Math Quiz</h3>HTML, CSS, JS (click to see the live app)</div>
+    <div class="about-me__body">
+      <p>I have a background in science, but I have an even stronger background solving puzzles. I love solving problems
+        and fixing things.</p>
+      <p>I have a background in science, but I have an even stronger background solving puzzles. I love solving problems
+        and fixing things.</p>
+    </div>
 
-              <div id="quizapp">
-              <a href="https://thinkful-ei-macaw.github.io/quizzapp2-13-SJ/" target="_blank"><img src="Project-Images/tinyquiz.png" id="quizappimg" alt="results screen for a quiz app I made"></a></div>
-              
-              <div class="project-desc">
-                Are you smarter than a first grader?</div>
-              <div class="project-link"><a href="https://github.com/thinkful-ei-macaw/quizzapp2-13-SJ" target="_blank">Visit the repo</a></div>
-            </div>
+    <img src="Project-Images/tinydogbutt.jpeg" alt="something" class="about-me__img">
+  </section>
 
-            <div class="project-container">
-              <div class="project-title"><h3>Bookmarks</h3>HTML, CSS, JS (click to see the live app)</div>
 
-              <div id="bookmarkapp">
-              <a href="https://thinkful-ei-macaw.github.io/sararm-bookmarks-app/" target="_blank"><img src="Project-Images/tinybookmark.png" id="bookmarkappimg" alt="intial page of a bookmark app I made"></a></div>
-              
-              <div class="project-desc">
-                Allows the user to add, store, rate, edit, filter, and delete bookmarks</div>
-              
-              <div class="project-link"><a href="https://github.com/thinkful-ei-macaw/sararm-bookmarks-app" target="_blank">Visit the repo</a></div>
-            </div>
-          
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">What I've done</h2>
+    <!-- <p class="section__subtitle section__subtitle--work">A selection of my work</p> -->
+    <div class="portfolio">
+      <div class="portfolio__item">
+        <h3 class="portfolio__title">Sirilla</h3>
+        <a href="https://spaced-repetition-sb.now.sh" class="portfolio__live-link">
+          <img src="Project-Images/s4-sirilla.png" alt="" class="portfolio__img"> </a>
+        <a href="" class="portfolio__repo__link btn">Click here for more info</a>
 
-              <div class="project-container">
-                <div class="project-title" id="comingsoontitle">
-                  <h3>app</h3>  stack</div>
+        <p class="portfolio__desc">Sirilla is a language learning app which uses the spaced repetition technique</p>
+      </div>
 
-            <div id="comingsoon">
-              <div id="comingsoontext">coming soon!</div>
-            
-              <div class="project-desc"></div>
-            </div>
-            <!-- <div class=""><a href="#" target="_blank"></a></div> -->
-          </div>
-            </section>
-        </article>
+      <div class="portfolio__item">
+        <h3 class="portfolio__title">FF7 Companion</h3>
+        <a href="https://ff7-companion-app.saraquail.now.sh/" class="portfolio__live-link">
+          <img src="Project-Images/s4-ff7oa.png" alt="" class="portfolio__img"> </a>
+        <a href="" class="portfolio__repo__link btn">Click here for more info</a>
+        <p class="portfolio__desc">This unofficial Final Fantasy 7 companion app is a crowd-sourced bestiary. Users can
+          peruse and search for
+          enemies faced during gameplay to obtain information and save it to their short-list - a component called My
+          PHS. </p>
+      </div>
 
-        
-        <article class="skills">
-          <a id="skills"></a>
-            <h2>Skills</h2>
-            <div class="skill-content">
-              <img class="skillimg" src="Project-Images/tinyhtml5.png" alt="HTML5 icon">
-              <img class="skillimg" src="Project-Images/tinycss3.jpeg" alt="CSS3 icon">
-              <img class="skillimg" src="Project-Images/tinyjavascript.png" alt="Javascript icon">
-            </div>
-        </article>
+      <div class="portfolio__item">
+        <h3 class="portfolio__title">Dev LFT</h3>
+        <a href="https://devlft.now.sh/" class="portfolio__live-link">
+          <img src="Project-Images/s4-devlft.png" alt="" class="portfolio__img"> </a>
+        <a href="" class="portfolio__repo__link btn">Click here for more info</a>
 
-        
-        <article class="education">
-          <a id="education"></a>
-          <h2>Education</h2>
-          <section class="education-content">
+        <p class="portfolio__desc">Dev LFT is an app for developers who need help forming a team for their projects, or
+          who want to join a team
+          to work alongside their peers.</p>
+      </div>
 
-            <div class="undergrad">
-              <h3>University of Tennessee</h3>
-              <p>B.S. Geology</p>
-              <ul class="ug-class-list">
-                <li>Undergraduate Researcher with Dr. Annette Engel – Calcite and water analysis at Cascade Caves, KY</li>
-                <li>Undergraduate Researcher with Dr. Larry Taylor – Native Fe-bearing basalt from Northern Siberia</li>
-                <li>Publication: http://trace.tennessee.edu/pursuit/vol6/iss1/17</li>
-              </ul>
-            </div>
+    </div>
+  </section>
 
-            <div class="grad">
-              <h3>University of Florida</h3>
-              <p>M.S. Geology</p>
-              <ul class="gs-class-list">
-                <li>Thesis: Andesites from Axial Seamount at Juan de Fuca Ridge</li>
-                <li>Graduate Teaching Assistant for Mineralogy, Igneous and Metamorphic Petrology</li>
-                <li>Presented research at GSA Cordilleran Section Meeting, 2017</li>
-                <li>Facilitator of professional development seminar for graduate student body, 2017</li>
-              </ul>
-            </div>
-          </section>
-          <!-- <section class="awards"><h4></h4>
-          </section> -->
+  <footer class="footer" id="footer">
+    <a class="footer__link" href="mailto:saramoneymills@gmail.com">saramoneymills@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/Saraquail/">
+          <i class="fab fa-github-square">
+          </i></a></li>
 
-        </article>
-
-        
-        <article class="contact">
-          <a id="contact"></a>
-            <h2>Contact</h2>
-            <a href="https://github.com/Saraquail/" target="_blank"><img src="Project-Images/tinygithub3.png" class="contact-linkgh" alt="github logo"></a>
-            <a href="mailto:saramoneymills@gmail.com" target="_blank"><img src="Project-Images/tinygmail.png" class="contact-link" alt="gmail logo"></a>
-            <a href="https://www.linkedin.com/in/sararmills/" target="_blank"><img src="Project-Images/tinylinked.png" class="contact-link" alt="linkedin logo"></a>
-        </article>
-    </main>
-    <footer>
-      <span class="left-foot-text">Sara R Mills</span>
-      <span class="right-foot-text">saramoneymills@gmail.com</span>
-    </footer>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.linkedin.com/in/sararmills/">
+          <i class="fab fa-linkedin">
+          </i></a></li>
+    </ul>
+  </footer>
+  <script src="index.js"></script>
 </body>
+
 </html>

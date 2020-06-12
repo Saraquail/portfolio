@@ -11,6 +11,7 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
+  --clr-back: #272927;
   --clr-light: #d5d6d2;
   --clr-dark: #020202d5;
   --clr-accent: #754884;
@@ -41,8 +42,8 @@ html {
 }
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-back);
+  color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -296,7 +297,7 @@ transform: translateX(0);}
 
 .my-skills {
   background-color: var(--clr-dark);
-  background-image: url(Project-Images/greenhouse.jpg);
+  background-image: url(images/greenhouse.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   color: var(--clr-light);
@@ -315,7 +316,7 @@ transform: translateX(0);}
   width: 2em;
   height: 1px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
+  background: var(--clr-back);
   opacity: 0.25em;
 }
 
@@ -401,6 +402,10 @@ transform: translateX(0);}
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+  background-image: url(images/greenhouse.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
 }
 
 .portfolio {
@@ -419,6 +424,8 @@ transform: translateX(0);}
 }
 
 .portfolio__img {
+  width:30%;
+  margin: auto;
   transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
@@ -445,12 +452,11 @@ padding: 0;
 margin-bottom: .5em;
 }
 
-
 /* footer */
 
 .footer {
-  background-color: var(--clr-light);
-  color: var(--clr-accent);
+  background-color: var(--clr-back);
+  color: var(--clr-light);
   text-align: center;
   padding: 2.5em 0;
 }
@@ -499,18 +505,25 @@ margin-bottom: .5em;
 
 .portfolio-item-individual {
   padding: 0 2em 2em;
-  max-width: 1000px;
-  margin: 0, auto;
+  margin: 0;
 }
 
 .portfolio-item-individual p {
-  max-width: 600px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* .portfolio-item-individual .single-port-img {
-} */
 .smaller-header {
   font-size: var(--fs-h2);
+}
+
+
+.portfolio-item-individual__img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+}
+
+.portfolio-item-individual__img img {
 }

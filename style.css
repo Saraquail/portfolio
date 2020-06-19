@@ -315,7 +315,12 @@ header {
 
 .skill {
   max-width: 500px;
+  min-width: 200px;
   margin: 0 auto;
+}
+
+.skill p {
+  margin: 1em;
 }
 
 @media (min-width: 800px) {

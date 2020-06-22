@@ -398,6 +398,10 @@ header {
   margin-top: 2em;
 }
 
+.portfolio__live-link:focus {
+  outline: none;
+}
+
 .portfolio__img {
   width: 30%;
   margin: auto;

@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>Sara R Mills - CV</title>
+  <title>Sara R Mills - Sirilla</title>
   <meta charset="UTF-8>" <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|PT+Sans+Narrow|Roboto+Condensed&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -42,54 +40,37 @@
       </ul>
     </nav>
   </header>
+  <section class="intro">
+    <h1>Sirilla Learning</h1>
 
-  <section class="education">
-    <a id="education"></a>
-    <h1 class="section__title section__title--education">Education</h1>
+    <p class="section__subtitle section__subtitle--intro">A full stack app</p><img src="images/sirilla-landing.png"
+      alt="screenshot of a webpage showing a login form and button to login" class="intro__img">
   </section>
-  <section class="education__content">
 
+  <div class="portfolio-item-individual">
+    <p>A solo project</p>
 
-    <p class="section__subtitle section__subtitle--education tn">University of Tennessee - BS Geology</p>
+    <div class="portfolio-item-individual__img">
+      <img src="images/sirilla-ss1.png"
+        alt="screenshot of a webpage showing a list of spanish words and the number of times each word has been guessed correctly or incorrectly">
+      <img src="images/sirilla-ss2.png"
+        alt="screenshot of a webpage which reads Translate the word, and then a blue box with the word to be translated, the number of times each word has been guessed correctly or incorrectly, and a form to input the user's guess">
+      <img src="images/sirilla-ss3.png"
+        alt="screenshot of a webpage reading That is correct, good job! The correct translation for sintaxis was syntax">
+    </div>
 
-    <ul class="education__list">
-      <li class="education__item education__item--title">
-        Undergraduate Researcher with Dr. Annette Engel
-      </li>
-      <li class="education__item  education__item--content">
-        Calcite and
-        water analysis at Cascade Caves, KY
-      </li>
-      <li class="education__item education__item--title">
-        Undergraduate Researcher with Dr. Larry Taylor
-      </li>
-      <li class="education__item  education__item--content">
-        Native
-        Fe-bearing basalt from Northern Siberia
-      </li>
-      <li class="education__item pub">
-        <a href="http://trace.tennessee.edu/pursuit/vol6/iss1/17">My published paper</a>
-      </li>
-    </ul>
+    <p>Sirilla uses a linked list to implement the spaced repetition technique of learning to best aid users in learning
+      new languages.</p>
+    <p>This app was built using JavaScript, React, CSS.
+      The server was built using Node.js, Express, and Knex.
+      The database was built using PostgreSQL. Testing was done using Supertest, Mocha, Chai, and Cypress.</p>
 
-    <p class="section__subtitle section__subtitle--education fl">University of Florida - MS Geology</p>
-    <ul class="education__list">
-      <li class="education__item education__item--title">
-        Thesis: Andesites from Axial Seamount at Juan de Fuca Ridge
-      </li>
-      <li class="education__item education__item--title">
-        Graduate Teaching Assistant for Mineralogy, Igneous and
-        Metamorphic Petrology
-      </li>
-      <li class="education__item">
-        Presented research at GSA Cordilleran article Meeting
-      </li>
-      <li class="education__item">
-        Facilitator of professional development seminar for graduate
-        student body
-      </li>
-    </ul>
-  </section>
+    <div class="portfolio-item-individual__btn"> <a class=btn target="_blank"
+        href="https://github.com/Saraquail/sirilla-learning">Visit the Repo</a>
+      <a class=btn target="_blank" href="https://spaced-repetition-sb.now.sh/">See it Live</a>
+    </div>
+
+  </div>
 
   <footer class="footer" id="footer">
 
@@ -112,7 +93,7 @@
     </ul>
 
   </footer>
-  <script src="index.js"></script>
+  <script src="../index.js"></script>
 </body>
 
 </html>
